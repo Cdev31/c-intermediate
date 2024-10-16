@@ -1,0 +1,67 @@
+Estructuras de Datos Estáticas
+Arreglos (Arrays):
+
+Arreglos unidimensionales
+Arreglos multidimensionales (matrices)
+Arreglos dinámicos (que permiten redimensionar)
+Cadenas (Strings):
+
+Secuencias de caracteres que se pueden manipular.
+Estructuras de Datos Dinámicas
+Listas Enlazadas (Linked Lists):
+
+Listas Enlazadas Simples: Cada nodo apunta al siguiente.
+Listas Enlazadas Dobles: Cada nodo apunta al siguiente y al anterior.
+Listas Enlazadas Circulares: El último nodo apunta al primero.
+Pilas (Stacks):
+
+Estructuras LIFO (Last In, First Out).
+Colas (Queues):
+
+Estructuras FIFO (First In, First Out).
+Colas Circulares: Estructuras de cola que vuelven a comenzar en el principio al llegar al final.
+Colas de Prioridad (Priority Queues): Estructuras donde los elementos tienen una prioridad asociada.
+Árboles:
+
+Árboles Binarios: Cada nodo tiene como máximo dos hijos.
+Árboles de Búsqueda Binaria (BST): Un árbol binario que mantiene el orden de los elementos.
+Árboles Balanceados:
+Árboles AVL: Árboles binarios de búsqueda auto-balanceados.
+Árboles Red-Black: Árboles que mantienen un equilibrio mediante reglas específicas.
+Árboles N-arios: Cada nodo puede tener hasta N hijos.
+Árboles de Segmento: Utilizados para realizar consultas en rangos y actualizaciones.
+Árboles de Fenwick (o BIT): Utilizados para realizar sumas y actualizaciones rápidas.
+Grafos:
+
+Grafos Dirigidos: Grafos en los que las aristas tienen una dirección.
+Grafos No Dirigidos: Grafos en los que las aristas no tienen dirección.
+Grafos Ponderados: Grafos donde las aristas tienen un peso o costo.
+Grafos No Ponderados: Grafos sin pesos en las aristas.
+Grafos Circulares y Acyclic: Grafos que tienen ciclos o no.
+Tablas Hash (Hash Tables):
+
+Estructuras que utilizan una función hash para mapear claves a valores.
+Estructuras Especializadas (Dinámicas)
+Heaps:
+
+Min-Heap: Estructura de árbol donde el padre es menor que sus hijos.
+Max-Heap: Estructura de árbol donde el padre es mayor que sus hijos.
+Trie (o Árbol de Prefijos):
+
+Estructura de árbol utilizada para almacenar cadenas de texto y realizar búsquedas rápidas de prefijos.
+Estructuras de Datos Espaciales:
+
+Quad Tree: Utilizado para dividir el espacio en cuadrantes.
+KD-Tree: Utilizado para particionar espacios multidimensionales.
+Conjuntos Disjuntos (Union-Find):
+
+Estructura que maneja una colección de conjuntos disjuntos, soportando operaciones de unión y búsqueda.
+Estructuras de Datos de Acceso Rápido:
+
+Skip List: Una lista enlazada que permite búsqueda, inserción y eliminación eficientes mediante múltiples niveles.
+Estructuras de Datos Persistentes:
+
+Permiten mantener versiones anteriores de estructuras de datos.
+Estructuras de Datos Inmutables:
+
+Estructuras que no pueden ser modificadas después de su creación, útil en programación funcional.
