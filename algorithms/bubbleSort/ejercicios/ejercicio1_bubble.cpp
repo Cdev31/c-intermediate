@@ -13,40 +13,20 @@
 using namespace std;
 
 int main(){
-    
-    string word;
-    string ending;
-    
-    bool finished = false;
-    
-    char voclaes[5] = {'a', 'e', 'i', 'o', 'u'};
 
-    vector<string> palabras;
-    
-    int i, j, aux;
+    char vocales[5] = {'a', 'e', 'i', 'o', 'u'};
+    string words[6] = { "apple", "lino", "juan", "enrique", "lopez", "enrique" };
+    int index1, index2, numVocales = 0;
+    string auxiliar;
 
-    while( !finished ){
-
-        string word;
-        string ending;
-
-        cout << "Ingrese su palabra: \n";
-        cin >> word;
-
-        palabras.push_back( word );
-        
-        cout << "Desea finalizar? (s para sí, n para no): \n";
-        cin >> ending;
-
-        if (ending == "s") {
-            finished = true;
+    for( index1 = 0; 6 > index1; index1++ ){
+        for( index2=0; 5 > index2; index2++ ){
+            for( short i = 0; words[index2].size() > i; i++ ){
+                if( words[index2][i]  ){
+                    numVocales++;
+                }
+            }
         }
     }
-
-   for( i=0; palabras.size() > i; i++ ){
-       for( j=0; palabras.size() > j; j++ ){
-          if( palabras[i]. )
-       }
-   }
     
 }
