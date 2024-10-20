@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int numbers[] = {4,2,2,5,3,4,1,5};
+    int numbers[] = {2,4,2,5,3,4,1,5};
     int i, position, aux;
 
     for( i=0; 8 > i; i++ ){
