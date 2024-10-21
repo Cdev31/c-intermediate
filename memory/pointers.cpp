@@ -29,6 +29,16 @@ int main() {
      cout <<  &numbers[0] << "aca\n";
      cout << "El maximo es: " << findMax( &numbers[0], nElements );
 
+     // arimetica de punteros;
+    int num = 2;
+    int* address = &num;
+
+    int newValue = *( address + 1 );
+
+    newValue = 2;
+    int sum = ( newValue + num);
+
+    cout << "sumando: " << sum << "\n";
 
     return 0;
 }
