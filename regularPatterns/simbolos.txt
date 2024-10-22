@@ -1,0 +1,37 @@
+
+METACARACTERES
+
+. = cualquier caracter
+\d = cualquier digito [0-9]
+\D = cualquier caracter que no sea digito
+\w = cualquier caracter de palabra = [a-zA-Z0-9_] (guines bajos tambien)
+\W = cualquier caracter que no sea palabra
+\s = cualquier espacio en blanco
+\S = cualquier caracter que no sea espacio en blanco
+
+ASERCIONES
+
+Aserciones de posicion o anclaje
+^ = comienze con 
+$ = termine con
+\b = encuentra palabra o caracter limitado
+\B =  encuentra palabra o caracter sin limites
+
+
+CUANTIFICADORES
+* = elemento anterior null o mas de el mismo
++ = elemento anterior una o mas veces
+? = coincide con el elemento anterior una o cero veces
+{n} = coincide con el elemento anterior n veces
+{ n, } = coincide con el elemento anterior al menos n o mas
+{ n, m } = coincide con el elemento anterior de m a n
+
+Lazy (minima coincidencia o no codicioso)
+
+*? = cero o mas veces
++? = uno o mas veces
+?? = cero o una vez
+{ n, m }? = entre n y m
+
+
+

@@ -2,34 +2,71 @@
 
 using namespace std;
 
-struct File {
-    string filename;
-    File* next;
+struct Nodo {
+    int data;
+    Nodo* next;
 
-    File( string _filename ): filename( filename ){}; 
+    Nodo( int _data ): data( _data ){}
 };
 
-class DownloadQueue{
+class simpleQueue{
+
     private:
-       File* front;
-       File* rear;
+       Nodo* front;
+       Nodo* rear;
 
     public:
-       DownloadQueue(): front( nullptr ), rear( nullptr ){};
+      simpleQueue(): front( nullptr ), rear( nullptr ){};
 
-    void enqueue( string filename ){
-        File* newFile = new File(filename);
-        if( rear == nullptr ){
-            front = rear = newFile;
+    void enqueue( int newData ){
+        Nodo* newNode = new Nodo( newData );
+        newNode->next = nullptr;
+
+        if( front == nullptr ){
+            front = newNode;
+            rear = newNode;
         }
+        else {
+            rear->next = newNode;
+            rear = newNode;
+        }
+    }
 
-        rear->next =  newFile;
-        rear = newFile;
-        cout << filename << "agregado a la cola";
-    }      
+    void dequeue(){
+       if( front == nullptr ){
+         return;
+       }
+       Nodo* node = front;
+       front = front->next;
+
+       delete node;
+
+       if( front == nullptr ){
+        rear = nullptr;
+       }
+    }
+
+    void peek(){
+        if( front == nullptr ){
+            cout << "No hay elementos en cola";
+            return; 
+        }
+        cout << "Primer elemento en cola: " << front->data << "\n";
+    }
+
 
 };
 
-int main(){
+int main(int argc, char const *argv[])
+{
+    simpleQueue queue;
 
+    queue.enqueue(4);
+    queue.enqueue(2);
+    queue.enqueue(6);
+    queue.enqueue(2);
+
+    queue.peek();
+
+    return 0;
 }
