@@ -23,7 +23,7 @@ class List{
        Nodo* initPerson;
 
     public:
-    List(): initPerson(nullptr){};
+       List(): initPerson(nullptr){};
 
     void addPersonToHome( int id, string name ){
         Person person( id, name );
